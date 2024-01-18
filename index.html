@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>VMPortfolio</title>
+    
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .userim1{
+            filter:grayscale(1);
+            transition:all 1s;
+            animation: scaleIm 5s linear infinite;
+        }
+        .userim2{
+            filter:grayscale(1);
+            transition:all 1s;
+            animation: scaleIm 5s linear infinite;
+        }
+        @keyframes scaleIm {
+
+            0%{
+               filter: grayscale(1);
+               transform: scale(1);
+            }
+
+            50%{
+                filter: grayscale(0);
+               transform: scale(1.1);
+            }
+
+            100%{
+                filter: grayscale(1);
+               transform: scale(1);
+            }
+            
+        }
+
+        .circle1{
+            fill: none;
+            stroke: url(#GradientColor);
+            stroke-width: 20px;
+            stroke-dasharray: 560;
+            stroke-dashoffset: 560;
+            animation: ani1 2s linear forwards;
+        }
+        .circle2{
+            fill: none;
+            stroke: url(#GradientColor);
+            stroke-width: 20px;
+            stroke-dasharray: 560;
+            stroke-dashoffset: 560;
+            animation: ani2 2s linear forwards;
+        }
+        .circle3{
+            fill: none;
+            stroke: url(#GradientColor);
+            stroke-width: 20px;
+            stroke-dasharray: 560;
+            stroke-dashoffset: 560;
+            animation: ani3 2s linear forwards;
+        }
+        .circle4{
+            fill: none;
+            stroke: url(#GradientColor);
+            stroke-width: 20px;
+            stroke-dasharray: 560;
+            stroke-dashoffset: 560;
+            animation: ani4 2s linear forwards;
+        }
+
+        svg{
+            position: absolute;
+            top: 0;
+            left:0;
+        }
+
+        @keyframes ani1 {
+            100%{
+                stroke-dashoffset: 56;
+            }
+        }
+        @keyframes ani2 {
+            100%{
+                stroke-dashoffset: 140;
+            }
+        }
+        @keyframes ani3 {
+            100%{
+                stroke-dashoffset: 112;
+            }
+        }
+        @keyframes ani4 {
+            100%{
+                stroke-dashoffset: 28;
+            }
+        }
+        .shade{
+            width: 100%;
+            height: 100%;
+            background: rgba(190, 214, 255, 0.514);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: background-color 2s ease-out 100ms
+        }
+        .shade:hover{
+            background: rgba(19, 114, 193, 0.546);
+        }
+        input,textarea{
+            width:100%;
+            outline: none;
+            padding: 15px;
+            border: 1px solid rgba(56, 61, 65, 0.546);
+            border-radius: 5px;
+            background-color: transparent;
+            font-size: 1.25rem;
+            color: #010c19;
+            margin: 5px 0;
+        }
+        textarea{
+            resize:none;
+        }
+        input:focus,
+        textarea:focus{
+            box-shadow: 0 2px 5px #afd3ff;
+        }
+    </style>
+</head>
+<body>
+    <section class="overflow-x-hidden overflow-y-auto">
+        <!--navigation-bar-->
+         <nav class="bg-darkblue ">
+            <div class="relative flex w-[1080px] mx-auto items-center justify-between">
+                <div class="cursor-pointer py-7 pr-7">
+                    <p id="sec" class="font-ave text-white font-bold text-3xl ">Portfolio</p>
+                </div>
+                <ul class="flex space-x-14">
+                    <!--sec1-->
+                    <li class="text-white font-mullish py-7 hover:text-lblue cursor-pointer transition-all 
+                    duration-100 relative group text-xl">
+                        <a href="#section1">About</a>
+                        <div class="absolute bottom-0 w-full h-1 hidden bg-lblue group-hover:block group-hover:cursor-pointer"></div>
+                    </li>
+                    <!--sec2-->
+                    <li class="text-white font-mullish py-7 hover:text-lblue cursor-pointer transition-all 
+                    duration-100 relative group text-xl">
+                        <a href="#section2">Skills</a>
+                        <div class="absolute bottom-0 w-full h-1 hidden bg-lblue group-hover:block group-hover:cursor-pointer"></div>
+                    </li>
+                    <!--sec3-->
+                    <li class="text-white font-mullish py-7 hover:text-lblue cursor-pointer transition-all 
+                    duration-100 relative group text-xl">
+                        <a href="#section3">Projects</a>
+                        <div class="absolute bottom-0 w-full h-1 hidden bg-lblue group-hover:block group-hover:cursor-pointer"></div>
+                    </li>
+                    <!--sec4-->
+                    <li class="text-white font-mullish py-7 hover:text-lblue cursor-pointer transition-all 
+                    duration-100 relative group text-xl">
+                        <a href="#section4">Contact</a>
+                        <div class="absolute bottom-0 w-full h-1 hidden bg-lblue group-hover:block group-hover:cursor-pointer"></div>
+                    </li>
+                </ul>
+            </div>   
+         </nav>
+         
+         <!--hero section-->
+         <section class="relative bg-darkblue py-12 pb-[130px]">
+            <div class="flex w-10/12 max-w-[1080px]  flex-col xl:flex-row justify-between items-center mx-auto relative" >
+                <div class="space-y-6 ">
+                    <h1 class="font-fre text-lblue text-4xl text-[60px]  leading-[1.2]"><span class="role"></span></h1>
+                    <div class="w-10 h-1 bg-green-300"></div>
+                    <p class="font-kal text-[35px] font-extrabold leading-7 opacity-90 text-white">I am Vaishnavi Mandhane.</p>
+                    <p class="text-white text-xl opacity-60 ">A software developer and Enthusiatic coder and  <br>this is my portfolio website. 
+                         Here, you will learn about <br>my journey as a software developer .</p>
+                    <button class="py-[15px] px-[41px] rounded-md bg-lblue text-deepBlue font-mullish font-bold text-xl
+                     hover:bg-lblue20 cursor-pointer">
+                        <a href="/">Resume</a>
+                    </button>
+                </div>
+                <div class="hidden xl:block">
+                    <img src="./images_portfolio/mee.jpg" alt="" loading="lazy" class="w-[400px] rounded-full userim1">
+                    <img src="./images_portfolio/bg123-removebg-preview.png" alt="" loading="lazy" width="680px" class="absolute -bottom-[80px] -right-[135px] userim2">
+                </div>
+            </div>
+         </section>
+
+         <!--about-section-->
+         <section class="relative mt-[120px]">
+             <div class=" relative flex w-10/12 max-w-[1080px] flex-col md:flex-row justify-between rounded-lg items-center mx-auto border min-h-[480px] bg-white p-10 shadow-xl shadow-lblue pt-5">
+                <!--left-->
+                <div class="flex flex-col space-y-3">
+                    <img src="./images_portfolio/aboutme2-removebg-preview.png" alt="" loading="lazy" width="460px" >
+                    <h2 id="section1" class="font-kal font-bold text-5xl text-darkblue leading-[1.2] mx-auto">About Me</h2>
+                    <div class="w-10 h-1 bg-greenLight mx-auto"></div>
+                </div>
+                <!--right-->
+                <div class="xl:mt-[75px] mt-[35px]">
+                    <p class="font-mullish text-deepBlue opacity-85 leading-[1.2] text-[20px] max-w-[520px]">Greetings! I am a spirited coder and web developer currently navigating the academic realms at IIIT Pune.
+                        Embracing the exhilarating world of zeros and ones, I find solace in crafting digital wonders. 
+                        Armed with a keyboard and a cup of coffee, I embark on coding adventures with zeal and an insatiable curiosity
+                        for the ever-evolving tech landscape. When not deciphering complex algorithms, you'll likely find me
+                        lost in the captivating realms of web development, transforming pixels into visually stunning and functional masterpieces.
+                        Join me in this virtual odyssey where lines of code meet creativity, and where bugs are mere puzzles waiting to be solved!</p>
+                    <div class="flex flex-row space-x-2 ">
+                        <a href="#"><img src="./images_portfolio/icon3-removebg-preview.png" alt="" class="w-[60px] rounded-full py-3"></a>
+                        <a href="#"><img src="./images_portfolio/icon5-removebg-preview.png" alt="" class="w-[60px] rounded-full py-3"></a>
+                        <a href="#"><img src="./images_portfolio/icon2-removebg-preview.png" alt="" class="w-[43px] rounded-full py-3"></a>
+                    </div>    
+                    
+                </div>
+                <div>
+                    <img src="./images_portfolio/name21-removebg-preview.png" alt="" loading="lazy" class="absolute left-[880px] bottom-[320px] z-10 w-[320px] hidden xl:block" >
+                    <img src="./images_portfolio/name2-removebg-preview.png" alt="" loading="lazy" class="absolute -left-[79px] top-[350px] z-10 w-[300px] hidden xl:block" >
+                </div>  
+
+             </div>
+             
+         </section>
+
+         <!--Education-->
+         <section class="relative bg-deepBlue mt-[130px] pb-[90px] hidden md:block">
+             <div class="relative w-10/12  md:max-w-[1080px] rounded-lg  mx-auto pt-20 pb-30">
+                <div class=" relative flex flex-row justify-between items-center space-x-6 mx-auto max-w-[480px]">
+                    <div class="flex flex-col space-y-2 ">
+                        <div class="w-16 h-1 bg-greenLight ml-12"></div>
+                        <div class="w-27 h-2 bg-greenLight ml-6"></div>
+                    </div>
+                    <h2 class="font-fj text-white text-5xl font-bold">Education</h2>
+                    <div class="flex flex-col space-y-2">
+                        <div class="w-16 h-1 bg-greenLight mr-12"></div>
+                        <div class="w-27 h-2 bg-greenLight mr-6"></div>
+                    </div>
+                </div>
+
+                <div class="relative grid grid-cols-1 items-center justify-between">
+                    <!--education1-->
+                    <div class=" relative w-2 h-14 mt-[12px] bg-lblue mx-auto rounded-sm"></div>
+                    <div class="flex flex-row mx-auto relative justify-between items-center space-x-11 max-w-[720px]">
+                        <div class="flex flex-col ">
+                            <p class="font-mullish text-lblue text-[25px] font-bold opacity-95">Secondary Education</p>
+                            <p class="font-mullish text-lblue text-[17px] opacity-85 mr-0">Kids' Kingdom Public School</p>
+                        </div>
+                        <img src="./images_portfolio/edu2.jpg" alt="" loading="lazy" width="60px" class="rounded-full py-3">
+                        <div class="flex flex-row justify-between items-center space-x-2 ">
+                            <div class="w-4 h-4 rounded-full bg-lblue"></div>
+                            <div class="bg-lblue rounded-full mx-auto px-8 flex flex-row items-center justify-between">
+                                <p class="font-mullish text-darkestblue text-xl py-2 ">Graduated in 2020</p></div>
+                        </div>
+                    </div>
+                    <div class=" relative w-2 h-10 mt-[12px] bg-lblue mx-auto rounded-sm"></div>
+                    <!--education2-->
+                    <div class="flex flex-row mx-auto relative justify-between items-center space-x-11 max-w-[880px]">
+                        <div class="flex flex-row justify-between items-center space-x-2 ">
+                            <div class="bg-lblue rounded-full mx-auto px-[78px] flex flex-row items-center justify-between">
+                                <p class="font-mullish text-darkestblue text-xl py-2 ">Graduated in 2022</p></div>
+                            <div class="w-4 h-4 rounded-full bg-lblue"></div>
+                        </div>
+                        <img src="./images_portfolio/edu2.jpg" alt="" loading="lazy" width="60px" class="rounded-full py-3">
+                        <div class="flex flex-col ">
+                            <p class="font-mullish text-lblue text-[25px] font-bold opacity-95">Higher Secondary Education</p>
+                            <p class="font-mullish text-lblue text-[17px] opacity-85 mr-0">NSB Higher Secondary college</p>
+                        </div>
+                    </div>
+                    <div class=" relative w-2 h-10 mt-[12px] bg-lblue mx-auto rounded-sm"></div>
+                    <!--education3-->
+                    <div class="flex flex-row mx-auto relative justify-between items-center space-x-11 max-w-[740px]">
+                        <div class="flex flex-col ">
+                            <p class="font-mullish text-lblue text-[25px] font-bold opacity-95">Bachelor Of Technology</p>
+                            <p class="font-mullish text-lblue text-[17px] opacity-85 ">IIIT Pune</p>
+                        </div>
+                        <img src="./images_portfolio/edu2.jpg" alt="" loading="lazy" width="60px" class="rounded-full py-3">
+                        <div class="flex flex-row justify-between items-center space-x-2 ">
+                            <div class="w-4 h-4 rounded-full bg-lblue"></div>
+                            <div class="bg-lblue rounded-full mx-auto px-[70px] flex flex-row items-center justify-between">
+                                <p class="font-mullish text-darkestblue text-xl py-2 ">2022-present</p></div>
+                        </div>
+                    </div>
+                </div>  
+             </div>
+
+             <img src="./images_portfolio/bgedu1-removebg-preview.png" alt="" loading="lazy" width="500px" class="absolute bottom-0 right-0 hidden lg:block">
+             <img src="./images_portfolio/bgedu1-removebg-preview.png" alt="" loading="lazy" width="500px" class="absolute top-0 left-0 rotate-180 hidden lg:block">
+         </section>
+
+         <!--skills-section-->
+         <section class="relative p-[35px]  bg-gradient-to-t from-blue-200 to-white">
+             <div class="relative w-10/12 max-w-[1080px] flex flex-col items-center justify-between mx-auto pt-6 pb-[45px] ">
+                <h2 id="section2" class="font-fre text-darkblue font-extrabold text-6xl leading-[1.2] py-3 px-3 mx-auto">My Skills</h2>
+                <div class="w-32 h-1 bg-greenLight mx-auto"></div>
+
+                <!--circularskillbars-->
+                <div class="relative py-[55px] px-[20px] md:px-[80px] mt-[20px] pb-[70px] bg-white border-slate-400 rounded-lg
+                 shadow-lg shadow-lblue grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-[68px] "> 
+                  <!--skill1-->
+                  <div class="relative">
+                    <div class="w-[200px] h-[200px] relative flex flex-col items-center justify-between">
+                        <div class="outer w-[200px] h-[200px] rounded-full border p-[20px] shadow-md shadow-blue">
+                         <div class="inner w-[160px] h-[160px] rounded-full border shadow-inner shadow-lblue20
+                          flex items-center justify-center">
+                             <div class="font-bold font-mullish text-3xl text-darkblue">90%</div>
+                         </div>
+                        </div>
+                        <p class="text-deepBlue font-mullish text-2xl font-bold py-4">C++</p>
+                     </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                     <defs>
+                        <linearGradient id="GradientColor">
+                           <stop offset="0%" stop-color="#98BAE3" />
+                           <stop offset="100%" stop-color="#15273C" />
+                        </linearGradient>
+                     </defs>
+                     <circle cx="100" cy="100" r="90" stroke-linecap="round" class="circle1"/>
+                     </svg>
+ 
+                  </div> 
+
+                  <!--skill2-->
+                  <div class="relative">
+                    <div class="w-[200px] h-[200px] relative flex flex-col items-center justify-between">
+                        <div class="outer w-[200px] h-[200px] rounded-full border p-[20px] shadow-md shadow-blue">
+                         <div class="inner w-[160px] h-[160px] rounded-full border shadow-inner shadow-lblue20
+                          flex items-center justify-center">
+                             <div class="font-bold font-mullish text-3xl text-darkblue">75%</div>
+                         </div>
+                        </div>
+                        <p class="text-deepBlue font-mullish text-2xl font-bold py-4">Python</p>
+                     </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                     <defs>
+                        <linearGradient id="GradientColor">
+                           <stop offset="0%" stop-color="#98BAE3" />
+                           <stop offset="100%" stop-color="#15273C" />
+                        </linearGradient>
+                     </defs>
+                     <circle cx="100" cy="100" r="90" stroke-linecap="round" class="circle2"/>
+                     </svg>
+ 
+                  </div>
+
+                  <!--skill3-->
+                  <div class="relative">
+                    <div class="w-[200px] h-[200px] relative flex flex-col items-center justify-between">
+                        <div class="outer w-[200px] h-[200px] rounded-full border p-[20px] shadow-md shadow-blue">
+                         <div class="inner w-[160px] h-[160px] rounded-full border shadow-inner shadow-lblue20
+                          flex items-center justify-center">
+                             <div class="font-bold font-mullish text-3xl text-darkblue">80%</div>
+                         </div>
+                        </div>
+                        <p class="text-deepBlue font-mullish text-2xl font-bold py-4">Java Script</p>
+                     </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                     <defs>
+                        <linearGradient id="GradientColor">
+                           <stop offset="0%" stop-color="#98BAE3" />
+                           <stop offset="100%" stop-color="#15273C" />
+                        </linearGradient>
+                     </defs>
+                     <circle cx="100" cy="100" r="90" stroke-linecap="round" class="circle3"/>
+                     </svg>
+ 
+                  </div>
+
+                  <!--skill4-->
+                  <div class="relative">
+                    <div class="w-[200px] h-[200px] relative flex flex-col items-center justify-between">
+                        <div class="outer w-[200px] h-[200px] rounded-full border p-[20px] shadow-md shadow-blue">
+                         <div class="inner w-[160px] h-[160px] rounded-full border shadow-inner shadow-lblue20
+                          flex items-center justify-center">
+                             <div class="font-bold font-mullish text-3xl text-darkblue">95%</div>
+                         </div>
+                        </div>
+                        <p class="text-deepBlue font-mullish text-2xl font-bold py-4">HTML</p>
+                     </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                     <defs>
+                        <linearGradient id="GradientColor">
+                           <stop offset="0%" stop-color="#98BAE3" />
+                           <stop offset="100%" stop-color="#15273C" />
+                        </linearGradient>
+                     </defs>
+                     <circle cx="100" cy="100" r="90" stroke-linecap="round" class="circle4"/>
+                     </svg>
+ 
+                  </div>
+
+                  <!--skill5-->
+                  <div class="relative">
+                    <div class="w-[200px] h-[200px] relative flex flex-col items-center justify-between">
+                        <div class="outer w-[200px] h-[200px] rounded-full border p-[20px] shadow-md shadow-blue">
+                         <div class="inner w-[160px] h-[160px] rounded-full border shadow-inner shadow-lblue20
+                          flex items-center justify-center">
+                             <div class="font-bold font-mullish text-3xl text-darkblue">90%</div>
+                         </div>
+                        </div>
+                        <p class="text-deepBlue font-mullish text-2xl font-bold py-4">CSS</p>
+                     </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                     <defs>
+                        <linearGradient id="GradientColor">
+                           <stop offset="0%" stop-color="#98BAE3" />
+                           <stop offset="100%" stop-color="#15273C" />
+                        </linearGradient>
+                     </defs>
+                     <circle cx="100" cy="100" r="90" stroke-linecap="round" class="circle1"/>
+                     </svg>
+ 
+                  </div>
+
+                  <!--skill6-->
+                  <div class="relative">
+                    <div class="w-[200px] h-[200px] relative flex flex-col items-center justify-between">
+                        <div class="outer w-[200px] h-[200px] rounded-full border p-[20px] shadow-md shadow-blue">
+                         <div class="inner w-[160px] h-[160px] rounded-full border shadow-inner shadow-lblue20
+                          flex items-center justify-center">
+                             <div class="font-bold font-mullish text-3xl text-darkblue">95%</div>
+                         </div>
+                        </div>
+                        <p class="text-deepBlue font-mullish text-2xl font-bold py-4">Tailwind CSS</p>
+                     </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                     <defs>
+                        <linearGradient id="GradientColor">
+                           <stop offset="0%" stop-color="#98BAE3" />
+                           <stop offset="100%" stop-color="#15273C" />
+                        </linearGradient>
+                     </defs>
+                     <circle cx="100" cy="100" r="90" stroke-linecap="round" class="circle4"/>
+                     </svg>
+ 
+                  </div>
+                </div>
+                
+             </div>
+         </section>
+
+         <!--projects-->
+         <section class="relative bg-darkblue pb-[130px]">
+            <div class="relative mx-auto max-w-[350px] pt-[45px] "><h2 id="section3" class="font-fre text-white font-extrabold text-6xl leading-[1.2] py-3 px-3 mx-auto">My Projects</h2></div>
+                <div class="w-32 h-1 bg-greenLight mx-auto "></div>
+                <!--projects-container-->
+             <div class="space-y-[90px]  relative">
+                 <!--project1-->
+                 <div class="relative p-[45px] mt-[80px] md:max-width-[460px] lg:max-w-[780px] xl:max-w-[1080px] min-h-[500px] xl:ml-[250px] md:ml-[95px] bg-[url('/images_portfolio/project2.jpg')] bg-no-repeat bg-cover
+                 rounded-lg stroke stroke-white group hover:scale-105 transition-all duration-200">
+                    <div class="font-mullish text-[180px] text-white font-extrabold absolute -right-2 -top-10 z-10 hidden group-hover:block transition-all duration-200 ">01</div>
+                    <div class="shade"></div>
+                    <div class="z-[100] absolute flex flex-col justify-between max-w-[560px] space-y-6 mt-[100px]">
+                        <div class="relative flex flex-row space-x-4 items-center">
+                            <img src="./images_portfolio/htmlicon-removebg-preview.png" alt="" loading="lazy" class="w-[45px] h-[45px]">
+                            <img src="./images_portfolio/cssicon-removebg-preview.png" alt="" loading="lazy" class="w-[47px] h-[50px]">
+                            <img src="./images_portfolio/jsicon-removebg-preview.png" alt="" loading="lazy" class="w-[51px] h-[53px]">
+                        </div>
+                        <h2 class="font-mullish font-bold text-4xl text-darkblue leading-[1.2]">Name of Project</h2>
+                        <p class="font-mullish text-[18px] opacity-90 text-darkestblue leading-[1.2]">Description of Project : This concise breakdown presents your educational journey in a technical manner,
+                             outlining key milestones  </p>
+                        <div class="relative flex flex-row space-x-3 items-center ">
+                            <a href="/"><img src="./images_portfolio/icon5-removebg-preview.png" alt="" loading="lazy" class="w-[60px] h-[45px]"></a>
+                            <a href=""><img src="./images_portfolio/web-link-icon-26.jpg" alt="" loading="lazy" class="w-[40px] h-[42px]"></a>  
+                        </div>
+                    </div>
+                    <div><img src="./images_portfolio/project4-removebg-preview.png" alt="" loading="lazy" class="absolute -right-20 -top-20 w-[480px]">
+                        <img src="./images_portfolio/project4-removebg-preview.png" alt="" loading="lazy" class="absolute -left-20 -bottom-20 w-[480px] rotate-180"></div>
+                 </div>
+
+                 <!--project2-->
+                 <div class="relative p-[35px] mt-[50px] max-w-[1080px] min-h-[500px] ml-[520px] bg-[url('/images_portfolio/project2.jpg')] bg-no-repeat bg-cover
+                 rounded-md stroke stroke-white group hover:scale-105 transition-all duration-200">
+                    <div class="font-mullish text-[180px] text-white font-extrabold absolute right-1 -top-10 z-10 hidden group-hover:block transition-all duration-200 ">02</div>
+                    <div class="shade"></div>
+                    <div class="z-[100] absolute flex flex-col justify-between max-w-[560px] space-y-6 mt-[100px]">
+                        <div class="relative flex flex-row space-x-4 items-center">
+                            <img src="./images_portfolio/htmlicon-removebg-preview.png" alt="" loading="lazy" class="w-[45px] h-[45px]">
+                            <img src="./images_portfolio/cssicon-removebg-preview.png" alt="" loading="lazy" class="w-[47px] h-[50px]">
+                            <img src="./images_portfolio/jsicon-removebg-preview.png" alt="" loading="lazy" class="w-[51px] h-[53px]">
+                        </div>
+                        <h2 class="font-mullish font-bold text-4xl text-darkblue leading-[1.2]">Name of Project</h2>
+                        <p class="font-mullish text-[18px] opacity-90 text-darkestblue leading-[1.2]">Description of Project : This concise breakdown presents your educational journey in a technical manner,
+                             outlining key milestones  </p>
+                        <div class="relative flex flex-row space-x-3 items-center ">
+                            <a href="/"><img src="./images_portfolio/icon5-removebg-preview.png" alt="" loading="lazy" class="w-[60px] h-[45px]"></a>
+                            <a href=""><img src="./images_portfolio/web-link-icon-26.jpg" alt="" loading="lazy" class="w-[40px] h-[42px]"></a>  
+                        </div>
+                    </div>
+                    <div><img src="./images_portfolio/project4-removebg-preview.png" alt="" loading="lazy" class="absolute -right-20 -top-20 w-[480px]">
+                        <img src="./images_portfolio/project4-removebg-preview.png" alt="" loading="lazy" class="absolute -left-20 -bottom-20 w-[480px] rotate-180"></div>    
+                 </div>
+            </div>
+         </section>
+
+         <!--contact-me-->
+         <section class="relative p-10 bg-gradient-to-t from-blue-100 to-white ">
+           <div class="relative w-15/16 md:w-10/12 max-w-[1080px] rounded-lg mx-auto min-h-[480px] md:p-10 pt-5">
+            <h2 id="section4" class=" relative p-[20px] max-w-[255px] mt-[15px] font-kal text-darkblue text-4xl  md:text-6xl font-bold mx-auto md:max-w-[420px]">Get in Touch!</h2>
+            <div class="w-32 h-1 bg-greenLight mx-auto "></div>
+            <form action="#">
+               <div class="flex flex-col space-y-2 mt-[15px] max-w-[780px] mx-auto">
+                <div class="w-full p-3">
+                    <input class="name" placeholder="Name" type="text" autocomplete="off"/>
+                </div>
+                <div class="w-full p-3">
+                    <input class="email" placeholder="name@example.com" type="email" autocomplete="off"/>
+                </div>
+                <div class="w-full p-3">
+                    <textarea cols="30" rows="10" class="message" placeholder="Message"></textarea>
+                </div>
+                <div class="mx-auto max-w-[300px]">
+                    <button type="submit" onclick="handleSubmit()" class="font-mullish py-[15px] px-[21px] rounded-md bg-lblue text-deepBlue  text-2xl font-bold hover:bg-lblue20 transition-all duration-200">Send Message</button>
+                </div>
+               </div>
+
+            </form>
+         </div>
+
+         </section>
+
+         <!--footer-->
+         <section class="relative bg-darkblue p-[30px]">
+             <div class="flex flex-row justify-between items-center max-w-[880px] mx-auto">
+                <div class="flex flex-row justify-between items-center space-x-4 ">
+                    <a href="#sec" class="font-mullish opacity-85 text-white leading-[1.2] hidden sm:block">Portfolio</a>
+                    <a href="#section1" class="font-mullish opacity-85 text-white leading-[1.2] hidden md:block">About</a>
+                    <a href="#section2" class="font-mullish opacity-85 text-white leading-[1.2] hidden md:block">Skills</a>
+                    <a href="#section3" class="font-mullish opacity-85 text-white leading-[1.2] hidden md:block">Projects</a>
+                </div>
+                <div class="flex flex-row items-center justify-between space-x-5 max-w-[420px] px-[65px] sm:px-1">
+                    <a href="#"><img src="./images_portfolio/icon3-removebg-preview.png" alt="" class="w-[60px] rounded-full py-3"></a>
+                    <a href="#"><img src="./images_portfolio/icon5-removebg-preview.png" alt="" class="w-[39px] h-[45px] rounded-full py-3 bg-white"></a>
+                    <a href="#"><img src="./images_portfolio/icon2-removebg-preview.png" alt="" class="w-[43px] rounded-full py-3"></a>
+                </div> 
+             </div>
+         </section>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+                "Hello!",
+                "Namaste",
+                "Bonjour",
+                "Ciao",
+                "Hola",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+        });
+        </script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script src="app.js">
+        </script>
+</body>
+</html>
