@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>VMPortfolio</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
     <style>
         .userim1{
@@ -130,12 +130,13 @@
 <body>
     <section class="overflow-x-hidden overflow-y-auto">
         <!--navigation-bar-->
-         <nav class="bg-darkblue ">
+         <nav class="bg-darkblue">
             <div class="relative flex w-[1080px] mx-auto items-center justify-between">
                 <div class="cursor-pointer py-7 pr-7">
                     <p id="sec" class="font-ave text-white font-bold text-3xl ">Portfolio</p>
                 </div>
-                <ul class="flex space-x-14">
+                <!--lists-->
+                <ul class="flex space-x-14 ">
                     <!--sec1-->
                     <li class="text-white font-mullish py-7 hover:text-lblue cursor-pointer transition-all 
                     duration-100 relative group text-xl hidden lg:block">
@@ -156,12 +157,12 @@
                     </li>
                     <!--sec4-->
                     <li class="text-white font-mullish py-7 hover:text-lblue cursor-pointer transition-all 
-                    duration-100 relative group text-xl hidden lg:block``">
+                    duration-100 relative group text-xl hidden lg:block">
                         <a href="#section4">Contact</a>
                         <div class="absolute bottom-0 w-full h-1 hidden bg-lblue group-hover:block group-hover:cursor-pointer"></div>
                     </li>
                 </ul>
-            </div>   
+            </div>
          </nav>
          
          <!--hero section-->
@@ -195,17 +196,18 @@
                     <div class="w-10 h-1 bg-greenLight mx-auto"></div>
                 </div>
                 <!--right-->
-                <div class="xl:mt-[75px] mt-[35px]">
-                    <p class="font-mullish text-deepBlue opacity-85 leading-[1.2] text-[20px] max-w-[520px]">Greetings! I am a spirited coder and web developer currently navigating the academic realms at IIIT Pune.
+                <div class="xl:mt-[75px] mt-[35px] ">
+                    <p class="font-mullish text-deepBlue opacity-85 leading-[1.2] text-[20px] max-w-[520px] text-center">Greetings! 
+                        I am a spirited coder and web developer currently navigating the academic realms at IIIT Pune.
                         Embracing the exhilarating world of zeros and ones, I find solace in crafting digital wonders. 
                         Armed with a keyboard and a cup of coffee, I embark on coding adventures with zeal and an insatiable curiosity
                         for the ever-evolving tech landscape. When not deciphering complex algorithms, you'll likely find me
                         lost in the captivating realms of web development, transforming pixels into visually stunning and functional masterpieces.
                         Join me in this virtual odyssey where lines of code meet creativity, and where bugs are mere puzzles waiting to be solved!</p>
-                    <div class="flex flex-row space-x-2 ">
+                    <div class="flex flex-row space-x-2 px-[40px] md:px-[50px] lg:px-[120px] xl:px-[150px]">
                         <a href="https://www.linkedin.com/in/vaishnavi-mandhani-986973291/"><img src="./images_portfolio/icon3-removebg-preview.png" alt="" class="w-[60px] rounded-full py-3"></a>
                         <a href="https://github.com/Alivestars24"><img src="./images_portfolio/icon5-removebg-preview.png" alt="" class="w-[60px] rounded-full py-3"></a>
-                        <a href="#"><img src="./images_portfolio/icon2-removebg-preview.png" alt="" class="w-[43px] rounded-full py-3"></a>
+                        <img src="./images_portfolio/icon2-removebg-preview.png" alt="" class="w-[43px] rounded-full py-3">
                     </div>    
                     
                 </div>
@@ -284,13 +286,13 @@
          </section>
 
          <!--skills-section-->
-         <section class="relative p-[35px]  bg-gradient-to-t from-blue-200 to-white">
-             <div class="relative w-10/12 max-w-[1080px] flex flex-col items-center justify-between mx-auto pt-6 pb-[45px] ">
+         <section class="relative p-[05px]  bg-gradient-to-t from-blue-200 to-white">
+             <div class="relative w-10/12 min-w-[400px] lg:max-w-[1080px] flex flex-col items-center justify-between mx-auto pt-6 pb-[45px] ">
                 <h2 id="section2" class="font-fre text-darkblue font-extrabold text-6xl leading-[1.2] py-3 px-3 mx-auto">My Skills</h2>
                 <div class="w-32 h-1 bg-greenLight mx-auto"></div>
 
                 <!--circularskillbars-->
-                <div class="relative py-[55px] px-[20px] md:px-[80px] mt-[20px] pb-[70px] bg-white border-slate-400 rounded-lg
+                <div class="relative py-[55px] px-[60px] md:px-[80px] mt-[20px] pb-[70px] bg-white border-slate-400 rounded-lg
                  shadow-lg shadow-lblue grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-[68px] "> 
                   <!--skill1-->
                   <div class="relative">
@@ -441,7 +443,7 @@
                 <!--projects-container-->
              <div class="space-y-[110px]  relative">
                  <!--project1-->
-                 <div class="relative px-[45px] py-[45px] mt-[80px]  max-w-[300px] min-h-[350px] md:max-w-[460px] lg:max-w-[780px] xl:max-w-[1080px] md:min-h-[500px] ml-10 xl:ml-[250px] md:ml-[95px] bg-[url('/images_portfolio/project2.jpg')] bg-no-repeat bg-cover
+                 <div class="relative px-[45px] py-[45px] mt-[80px]  max-w-[300px] min-h-[350px] md:max-w-[460px] lg:max-w-[780px] xl:max-w-[1080px] md:min-h-[500px] ml-10 xl:ml-[150px] md:ml-[95px] bg-[url('/images_portfolio/project2.jpg')] bg-no-repeat bg-cover
                  rounded-lg stroke stroke-white group hover:scale-105 transition-all duration-200">
                     <div class="font-mullish text-[80px] md:text-[180px] text-white font-extrabold absolute -right-2 -top-10 z-10 hidden group-hover:block transition-all duration-200 ">01</div>
                     <div class="shade"></div>
@@ -464,7 +466,7 @@
                  </div>
 
                  <!--project2-->
-                 <div class="relative px-[45px] py-[45px] mt-[80px]  max-w-[300px] min-h-[350px] md:max-w-[460px] lg:max-w-[780px] xl:max-w-[1080px] md:min-h-[500px] ml-10 xl:ml-[520px] md:ml-[295px]  bg-[url('/images_portfolio/project2.jpg')] bg-no-repeat bg-cover
+                 <div class="relative px-[45px] py-[45px] mt-[80px]  max-w-[300px] min-h-[350px] md:max-w-[460px] lg:max-w-[780px] xl:max-w-[1080px] md:min-h-[500px] ml-10 xl:ml-[320px] 2xl:ml-[520px] md:ml-[295px]  bg-[url('/images_portfolio/project2.jpg')] bg-no-repeat bg-cover
                  rounded-md stroke stroke-white group hover:scale-105 transition-all duration-200">
                     <div class="font-mullish text-[80px] md:text-[180px] text-white font-extrabold absolute right-1 -top-10 z-10 hidden group-hover:block transition-all duration-200 ">02</div>
                     <div class="shade"></div>
